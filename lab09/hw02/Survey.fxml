@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab09.hw02.SurveyController">
+   <children>
+      <Label layoutX="256.0" layoutY="14.0" text="간단한 설문조사" />
+      <Label layoutX="27.0" layoutY="55.0" text="이름" />
+      <TextField fx:id="nameField" layoutX="80.0" layoutY="51.0" />
+      <Label layoutX="27.0" layoutY="82.0" text="거주지역" />
+      <Label layoutX="308.0" layoutY="55.0" text="성별" />
+      <Label layoutX="27.0" layoutY="111.0" text="1. 좋아하는 계절은?" />
+      <ComboBox fx:id="areaBox" layoutX="80.0" layoutY="78.0" prefWidth="150.0" />
+      <HBox layoutX="355.0" layoutY="54.0" spacing="60.0">
+         <children>
+            <RadioButton fx:id="maleButton" accessibleText="1" mnemonicParsing="false" text="남자" userData="1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="sex" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="femaleButton" accessibleText="2" mnemonicParsing="false" text="여자" toggleGroup="$sex" userData="2" />
+         </children>
+      </HBox>
+      <HBox layoutX="39.0" layoutY="135.0" spacing="70.0">
+         <children>
+            <CheckBox fx:id="springCheck" mnemonicParsing="false" text="봄" />
+            <CheckBox fx:id="summerCheck" mnemonicParsing="false" text="여름" />
+            <CheckBox fx:id="fallCheck" mnemonicParsing="false" text="가을" />
+            <CheckBox fx:id="winterCheck" mnemonicParsing="false" text="겨울" />
+         </children>
+      </HBox>
+      <Label layoutX="29.0" layoutY="163.0" text="2. 우리나라에서 가을에 가장 놀러가고 싶은 지역을 선택하세요." />
+      <HBox layoutX="39.0" layoutY="184.0" spacing="35.0">
+         <children>
+            <RadioButton fx:id="choice2_1" mnemonicParsing="false" text="수도권" userData="1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="area" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="choice2_2" mnemonicParsing="false" text="강원도" toggleGroup="$area" userData="2" />
+            <RadioButton fx:id="choice2_3" mnemonicParsing="false" text="충청도" toggleGroup="$area" userData="3" />
+            <RadioButton fx:id="choice2_4" mnemonicParsing="false" text="전라도" toggleGroup="$area" userData="4" />
+            <RadioButton fx:id="choice2_5" mnemonicParsing="false" text="경상도" toggleGroup="$area" userData="5" />
+            <RadioButton fx:id="choice2_6" mnemonicParsing="false" text="제주도" toggleGroup="$area" userData="6" />
+         </children>
+      </HBox>
+      <Button layoutX="268.0" layoutY="207.0" mnemonicParsing="false" onAction="#printAction" text="결과 출력" />
+      <TextArea fx:id="contentsArea" layoutX="21.0" layoutY="239.0" prefHeight="145.0" prefWidth="558.0" />
+   </children>
+</AnchorPane>

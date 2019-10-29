@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab09.hw01.CompareSortingController">
+   <children>
+      <Label layoutX="181.0" layoutY="29.0" text="과제7-2. JavaFX를 이용한 정렬 알고리즘 비교" />
+      <Label layoutX="152.0" layoutY="62.0" text="생성할 랜덤 정수의 수" />
+      <Label layoutX="152.0" layoutY="95.0" text="하한값" />
+      <Label layoutX="152.0" layoutY="130.0" text="상한값" />
+      <TextField fx:id="randomInteger" layoutX="289.0" layoutY="58.0" prefHeight="22.0" prefWidth="105.0" />
+      <TextField fx:id="lowerLimit" layoutX="288.0" layoutY="91.0" prefHeight="22.0" prefWidth="106.0" />
+      <TextField fx:id="upperLimit" layoutX="288.0" layoutY="126.0" prefHeight="22.0" prefWidth="106.0" />
+      <Button layoutX="440.0" layoutY="91.0" mnemonicParsing="false" onAction="#sortingAction" text="확인" />
+      <Label layoutX="92.0" layoutY="173.0" text="랜덤정렬" />
+      <Label layoutX="409.0" layoutY="173.0" text="역순으로 정렬이 되어있는 경우" />
+      <Label layoutX="251.0" layoutY="173.0" text="정렬이 되어있는 경우" />
+      <TextArea fx:id="randomSorting" layoutX="30.0" layoutY="200.0" prefHeight="162.0" prefWidth="172.0" />
+      <TextArea fx:id="doneSorting" layoutX="222.0" layoutY="200.0" prefHeight="162.0" prefWidth="172.0" />
+      <TextArea fx:id="reverseSorting" layoutX="406.0" layoutY="200.0" prefHeight="162.0" prefWidth="172.0" />
+   </children>
+</AnchorPane>
