@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="360.0" layoutX="20.0" layoutY="13.0" />
+      <Button fx:id="playAction" layoutX="397.0" layoutY="31.0" mnemonicParsing="false" text="재생" />
+      <Button fx:id="pauseAction" layoutX="397.0" layoutY="61.0" mnemonicParsing="false" text="멈춤" />
+      <Button fx:id="stopAction" layoutX="397.0" layoutY="91.0" mnemonicParsing="false" text="중지" />
+      <Label layoutX="368.0" layoutY="139.0" text="음량" />
+      <ProgressBar fx:id="progressBar" layoutX="20.0" layoutY="226.0" prefHeight="18.0" prefWidth="360.0" progress="0.0" />
+      <Label fx:id="timeLabel" layoutX="388.0" layoutY="229.0" text="0/0" />
+      <Slider fx:id="volumeSlider" layoutX="347.0" layoutY="182.0" />
+   </children>
+</AnchorPane>

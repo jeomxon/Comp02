@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab10.hw01.RockPaperScissorsController">
+   <children>
+      <Label layoutX="163.0" layoutY="31.0" text="가위바위보 게임">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton accessibleText="scissors" fx:id="scissors" layoutX="93.0" layoutY="227.0" mnemonicParsing="false" text="가위" userData="scissors">
+         <toggleGroup>
+            <ToggleGroup fx:id="selectedRadio" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton accessibleText="rock" fx:id="rock" layoutX="222.0" layoutY="227.0" mnemonicParsing="false" text="바위" toggleGroup="$selectedRadio" userData="rock" />
+      <RadioButton accessibleText="paper" fx:id="paper" layoutX="358.0" layoutY="227.0" mnemonicParsing="false" text="보" toggleGroup="$selectedRadio" userData="paper" />
+      <Button layoutX="216.0" layoutY="271.0" mnemonicParsing="false" onAction="#showResult" text="결과 확인" />
+      <Label layoutX="114.0" layoutY="79.0" text="Player" />
+      <Label layoutX="351.0" layoutY="79.0" text="AI" />
+      <ImageView fx:id="playerImage" fitHeight="109.0" fitWidth="120.0" layoutX="69.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/player_paper.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="computerImage" fitHeight="120.0" fitWidth="120.0" layoutX="297.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/com_paper.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="resultArea" layoutX="9.0" layoutY="314.0" prefHeight="172.0" prefWidth="481.0" />
+   </children>
+</AnchorPane>
