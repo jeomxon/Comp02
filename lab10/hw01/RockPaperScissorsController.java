@@ -1,3 +1,13 @@
+/***************************
+ * 
+ * 컴퓨터프로그래밍2 (05) HW01
+ * 학번 : 201902720
+ * 이름 : 유 정 훈
+ * 작성일 : 2019.11.05
+ * 목적  : 가위바위보 게임을 GUI로 구현
+ *
+ ***************************/
+
 package lab10.hw01;
 
 import javafx.fxml.FXML;
@@ -9,10 +19,7 @@ import javafx.scene.control.TextArea;
 
 public class RockPaperScissorsController {
 
-	@FXML RadioButton scissors;
 	@FXML ToggleGroup selectedRadio;
-	@FXML RadioButton rock;
-	@FXML RadioButton paper;
 	@FXML ImageView playerImage;
 	@FXML ImageView computerImage;
 	@FXML TextArea resultArea;

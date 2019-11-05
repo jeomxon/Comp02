@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab10.hw01.RockPaperScissorsController">
    <children>
       <Label layoutX="163.0" layoutY="31.0" text="가위바위보 게임">
@@ -18,13 +17,13 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <RadioButton accessibleText="scissors" fx:id="scissors" layoutX="93.0" layoutY="227.0" mnemonicParsing="false" text="가위" userData="scissors">
+      <RadioButton accessibleText="scissors" layoutX="93.0" layoutY="227.0" mnemonicParsing="false" text="가위" userData="scissors">
          <toggleGroup>
             <ToggleGroup fx:id="selectedRadio" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton accessibleText="rock" fx:id="rock" layoutX="222.0" layoutY="227.0" mnemonicParsing="false" text="바위" toggleGroup="$selectedRadio" userData="rock" />
-      <RadioButton accessibleText="paper" fx:id="paper" layoutX="358.0" layoutY="227.0" mnemonicParsing="false" text="보" toggleGroup="$selectedRadio" userData="paper" />
+      <RadioButton accessibleText="rock" layoutX="222.0" layoutY="227.0" mnemonicParsing="false" text="바위" toggleGroup="$selectedRadio" userData="rock" />
+      <RadioButton accessibleText="paper" layoutX="358.0" layoutY="227.0" mnemonicParsing="false" text="보" toggleGroup="$selectedRadio" userData="paper" />
       <Button layoutX="216.0" layoutY="271.0" mnemonicParsing="false" onAction="#showResult" text="결과 확인" />
       <Label layoutX="114.0" layoutY="79.0" text="Player" />
       <Label layoutX="351.0" layoutY="79.0" text="AI" />
