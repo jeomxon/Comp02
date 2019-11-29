@@ -70,7 +70,7 @@ public class HangManGameTest {
 			count++;
 		}
 		
-		if(count == wordInput.length*2+1) {
+		if(!randomWord.equals(makeString(wordInput))) {
 			System.out.println("정답을 맞추지 못했습니다.");
 			System.out.println("정답: " + randomWord);
 		}
